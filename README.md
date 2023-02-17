@@ -1,6 +1,9 @@
 <a href="http://relation-graph.com" target="_blank"><img src="http://relation-graph.com/website/logo" width="60" /></a>
 
-*relation-graph*
+*relation-graph-teyan*
+
+注意：当前fork版本2.0.9
+
 ---
 当前版本：v2.0.3 (v2.x支持vue2)
 

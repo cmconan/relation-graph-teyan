@@ -1,20 +1,24 @@
 {
-  "name": "relation-graph",
+  "name": "relation-graph-teyan",
   "version": "2.0.9",
-  "description": "relation-graph，Vue 关联关系图谱组件，可以展示如组织机构图谱、股权架构图谱、集团关系图谱等知识图谱，可提供多种图谱布局，包括树状布局、中心布局、力学布局自动布局等。Vue component for relationship graph , which can display knowledge graphs, such as organization graph, equity structure graph, group relationship graph, etc.",
-  "main": "lib/relation-graph.common.js",
-  "unpkg": "lib/relation-graph.umd.min.js",
+  "description": "relation-graph-teyan，从relation-graph fork的特盐定制化插件。Vue 关联关系图谱组件，可以展示如组织机构图谱、股权架构图谱、集团关系图谱等知识图谱，可提供多种图谱布局，包括树状布局、中心布局、力学布局自动布局等。Vue component for relationship graph , which can display knowledge graphs, such as organization graph, equity structure graph, group relationship graph, etc.",
+  "main": "lib/relation-graph-teyan.common.js",
+  "unpkg": "lib/relation-graph-teyan.umd.min.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --dest lib --name relation-graph src/index.js",
+    "build": "vue-cli-service build --target lib --dest lib --name relation-graph-teyan src/index.js",
     "lib": "webpack --display-error-details --config webpack.config.js.cc",
     "lint": "vue-cli-service lint"
   },
-  "author": "seeks<seeksdream@qq.com>",
+  "author": {
+    "email": "20136462@qq.common",
+    "name": "cmconan",
+    "url": "https://github.com/cmconan/"
+  },
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/seeksdream/relation-graph"
+    "url": "https://github.com/cmconan/relation-graph-teyan"
   },
   "homepage": "http://relation-graph.com",
   "keywords": [
