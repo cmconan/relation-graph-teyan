@@ -3,6 +3,13 @@
 *relation-graph-teyan*
 
 注意：当前fork版本2.0.9
+npm提交方式：
+1.登录npm
+npm login
+2.打包(先修改pachage.json版本号)
+npm run build
+3.提交
+npm publish
 
 ---
 当前版本：v2.0.3 (v2.x支持vue2)
