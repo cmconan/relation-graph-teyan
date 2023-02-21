@@ -37,6 +37,15 @@ export class RelationGraphWithData extends RelationGraph {
     this.resetViewSize();
     if (callback) callback(this);
   }
+  setTeyanOptions(options, callback) {
+    this.options = new RGOptions(options);
+    // this.graphSetting = this.options;
+    this.initLayouter();
+    this.resetViewSize();
+    // this.doLayout();
+    this.resetViewSize();
+    if (callback) callback(this);
+  }
   setLayouter(userLayouerInstance) {
     devLog('setLayouterClass::', userLayouerInstance);
     this.userLayouerClass = userLayouerInstance;
