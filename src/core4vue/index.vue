@@ -155,6 +155,9 @@ export default {
     setOptions(options, callback) {
       this.relationGraph.setOptions(options, callback);
     },
+    setTeyanOptions(options, callback) {
+      this.relationGraph.setTeyanOptions(options, callback);
+    },
     setJsonData(jsonData, callback) {
       this.relationGraph.setJsonData(jsonData, (instance) => {
         this.$nextTick(() => {
