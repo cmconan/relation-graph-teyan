@@ -34,6 +34,15 @@ export class RelationGraphWithEvent extends RelationGraphWithEffect {
       this.listeners.onNodeClick(node, e);
     }
   }
+  onNodeDragEnd(node, e) {
+    devLog('onNodeDragEnd:', node);
+    if (this.options.disableNodeClickEffect !== true && node.disableDefaultClickEffect !== true) {
+      this.setCheckedNode(node.id);
+    }
+    if (this.listeners.onNodeDragEnd) {
+      this.listeners.onNodeDragEnd(node, e);
+    }
+  }
   onLineClick(line, link, e) {
     devLog('onLineClick:', 'line:', line, 'link:', link);
     if (this.options.disableLineClickEffect !== true && link.disableDefaultClickEffect !== true) {

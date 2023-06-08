@@ -119,6 +119,7 @@ export default {
       if (Math.abs(x_buff) + Math.abs(y_buff) > 6) {
         setTimeout(() => {
           devLog('delay end dragging', this.dragging);
+          this.relationGraph.onNodeDragEnd(this.nodeProps, e);
           this.dragging = false;
         }, 100);
       } else {

@@ -56,6 +56,11 @@ export default {
       default: () => { return () => {}; },
       type: Function
     },
+    onNodeDragEnd: {
+      mustUseProp: false,
+      default: () => { return () => {}; },
+      type: Function
+    },
     onNodeExpand: {
       mustUseProp: false,
       default: () => { return () => {}; },
@@ -116,6 +121,7 @@ export default {
     devLog('---------------------------graph mounted---------------------------');
     const listeners = {
       onNodeClick: this.onNodeClick,
+      onNodeDragEnd: this.onNodeDragEnd,
       onNodeExpand: this.onNodeExpand,
       onNodeCollapse: this.onNodeCollapse,
       onLineClick: this.onLineClick,
